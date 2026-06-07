@@ -25,12 +25,19 @@ if st.button("View"):
     
     else:    
         if p.lmp > p.today:
-            st.error("Invalid dates!")
-        
+            st.error("Invalid dates!") 
         else:
             weeks, days = p.g_age_calc()
-            if p.weeks <= 6:
+            
+            if p.days == 0:
+                st.info("Today is recorded as the first day of the last menstrual period (LMP).")
+            
+            elif p.weeks < 4:
+                st.info("Pregnancy tests may not yet be reliable. Consider testing after a missed period.")    
+            
+            elif 4 <= p.weeks <= 6:
                 st.info("You can take a pregnancy test now for more reliable results.")
+            
             else:
                 trimester = p.trimester()
                 scan = p.scan_scheduler()
