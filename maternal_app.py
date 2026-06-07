@@ -63,7 +63,7 @@ if st.button("View"):
                         f"Trimester : {trimester}"
                     )
                 
-                elif user_choice == "Scan Schadule":
+                elif user_choice == "Scan Schedule":
                     st.write(
                         f"Scan info : {scan}"
                     )
