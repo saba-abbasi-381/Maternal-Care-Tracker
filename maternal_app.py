@@ -32,10 +32,10 @@ if st.button("View"):
             if p.days == 0:
                 st.info("Today is recorded as the first day of the last menstrual period (LMP).")
             
-            elif p.weeks < 4:
+            elif p.weeks <= 4:
                 st.info("Pregnancy tests may not yet be reliable. Consider testing after a missed period.")    
             
-            elif 4 <= p.weeks <= 6:
+            elif 4 < p.weeks <= 6:
                 st.info("You can take a pregnancy test now for more reliable results.")
             
             else:
