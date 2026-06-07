@@ -1,8 +1,8 @@
 import streamlit as st
 from maternal import SmartMaternalCareTracker
 
-st.title("Smart Maternal Care Tracker")
-st.header("Smart care for every hearbeat of motherhood!")
+st.title("Smart Maternal Care Tracker🧑‍⚕️")
+st.header("Smart care for every hearbeat of motherhood♥️!")
 
 last_date = st.date_input("Enter your last menstural date: ")
 current_date = st.date_input("Select current date: ")
