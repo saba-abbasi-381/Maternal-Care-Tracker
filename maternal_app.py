@@ -13,7 +13,7 @@ user_choice = st.sidebar.selectbox("Services ", [
     "Complete Summary",
     "Gestational Age",
     "Trimester",
-    "Scan Schadule",
+    "Scan Schedule",
     "Monitoring Alerts",
     "Edd(expected date of delivery)",
     
